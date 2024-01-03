@@ -1,0 +1,23 @@
+---
+- name: installing tomcat server and start server
+  hosts: qa
+  become: true
+  tasks:
+  - name: install java
+    yum:
+      name: java
+      state: latest
+
+  - name: download tomcat package
+    get_url:
+      url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.82/bin/apache-tomcat-9.0.82.tar.gz
+      dest: /home/ec2-user
+
+  - name: extract tomcat packages
+    unarchive:
+      src: /home/ec2-user/apache-tomcat-9.0.82.tar.gz
+      dest: /home/ec2-user
+      remote_src: yes
+
+  - name: start tomcat services
+    shell: nohup /home/ec2-user/apache-tomcat-9.0.82/bin/startup.sh

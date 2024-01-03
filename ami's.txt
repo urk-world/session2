@@ -1,0 +1,18 @@
+old ami-0c42696027a8ede58
+
+
+given ami-03d294e37a4820c21
+
+statefile  "ami-03d294e37a4820c21"
+
+
+next giving ami-0c42696027a8ede58
+
+
+redhat   ami-008b85aa3ff5c1b02
+
+
+
+    "dev" = ami-0f5ee92e2d63afc18"   #Red hat
+    "staging" = "ami-0874e7f6717a3cfd4"  #suse
+    "prod" = "ami-0343ac03b28f230a0"    #debian
