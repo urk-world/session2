@@ -1,2 +1,2 @@
-#!/bin/bash
 echo "checking"
+echo "is it work"
