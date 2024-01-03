@@ -1,0 +1,25 @@
+isntalling jenkins
+----------------------
+
+1. check executor is root or not
+2. If not a root user,then exit from the script
+3. yum update -y
+4. Check previous command is executed successfully or not
+5. wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+6. Check this command is executed successfully or not
+7. rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+8. Check this command is executed successfully or not
+9. yum upgrade
+10. Check this command is executed successfully or not
+11. amazon-linux-extras install java-openjdk11 -y
+12. Check this command is executed successfully or not
+13. dnf install java-11-amazon-corretto -y
+14. Check this command is executed successfully or not
+15.yum install jenkins -y
+16. Check this command is executed successfully or not
+17. systemctl enable jenkins
+18. Check this command is executed successfully or not
+19. systemctl start jenkins
+20. Check this command is executed successfully or not
+21.systemctl status jenkins
